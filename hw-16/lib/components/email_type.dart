@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hw_16/extentions/context.dart';
 
 import '../constants/spaces.dart';
-import '../screens/login.dart';
+import '../screens/login_email_type.dart';
 
 class EmailType extends StatelessWidget {
   const EmailType({
@@ -30,7 +30,7 @@ class EmailType extends StatelessWidget {
                 ),
                 // <-- OutlinedButton
                 onPressed: () {
-                  context.pushPage(const Login());
+                  context.pushPage(const LoginEmailType());
                 },
                 icon: const Icon(
                   Icons.apple,
@@ -40,6 +40,7 @@ class EmailType extends StatelessWidget {
                 label: const Text(
                   '   Continue with Apple',
                   style: TextStyle(
+                      fontFamily: "Poppins",
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
@@ -58,7 +59,7 @@ class EmailType extends StatelessWidget {
                     alignment: Alignment.centerLeft),
                 // <-- OutlinedButton
                 onPressed: () {
-                  context.pushPage(const Login());
+                  context.pushPage(const LoginEmailType());
                 },
                 icon: const Icon(
                   FontAwesomeIcons.google,
@@ -68,6 +69,7 @@ class EmailType extends StatelessWidget {
                 label: const Text(
                   '   Continue with Gmail',
                   style: TextStyle(
+                      fontFamily: "Poppins",
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
@@ -86,7 +88,7 @@ class EmailType extends StatelessWidget {
                     alignment: Alignment.centerLeft),
                 // <-- OutlinedButton
                 onPressed: () {
-                  context.pushPage(const Login());
+                  context.pushPage(const LoginEmailType());
                 },
                 icon: const Icon(
                   Icons.facebook,
@@ -96,6 +98,7 @@ class EmailType extends StatelessWidget {
                 label: const Text(
                   '   Continue with Facebook',
                   style: TextStyle(
+                      fontFamily: "Poppins",
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),
@@ -115,7 +118,7 @@ class EmailType extends StatelessWidget {
                 ),
                 // <-- OutlinedButton
                 onPressed: () {
-                  context.pushPage(const Login());
+                  context.pushPage(const LoginEmailType());
                 },
                 icon: const Icon(
                   Icons.email,
@@ -125,6 +128,7 @@ class EmailType extends StatelessWidget {
                 label: const Text(
                   '   Continue with email',
                   style: TextStyle(
+                      fontFamily: "Poppins",
                       fontSize: 18,
                       fontWeight: FontWeight.w500,
                       color: Colors.black),

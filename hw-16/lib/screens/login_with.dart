@@ -1,6 +1,5 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hw_16/constants/spaces.dart';
 
 import '../components/app_bar.dart';
@@ -22,12 +21,19 @@ class LoginWith extends StatelessWidget {
             children: [
               const Text(
                 "LOG IN OR SIGN UP",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w900),
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w900,
+                  fontFamily: "Poppins",
+                ),
               ),
               kVSpace16,
               const Text(
                 'By logging in, i agree with McDonald\'s ',
-                style: TextStyle(fontSize: 16),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontFamily: "Poppins",
+                ),
               ),
               kVSpace8,
               Text.rich(
@@ -36,6 +42,7 @@ class LoginWith extends StatelessWidget {
                     TextSpan(
                       text: 'Terms & conditions',
                       style: const TextStyle(
+                          fontFamily: "Poppins",
                           decoration: TextDecoration.underline,
                           color: Colors.blue,
                           fontSize: 16),
@@ -48,6 +55,7 @@ class LoginWith extends StatelessWidget {
                     TextSpan(
                       text: 'Privacy Statement',
                       style: const TextStyle(
+                        fontFamily: "Poppins",
                         decoration: TextDecoration.underline,
                         color: Colors.blue,
                         fontSize: 16,

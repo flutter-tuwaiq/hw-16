@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hw_16/constants/spaces.dart';
-import 'package:hw_16/screens/Onboard_one.dart';
-import 'package:hw_16/screens/Onboard_three.dart';
-import 'package:hw_16/screens/Onboard_two.dart';
-
-import 'components/app_bar.dart';
+import 'package:hw_16/screens/Onboard_page_one.dart';
+import 'package:hw_16/screens/Onboard_page_three.dart';
+import 'package:hw_16/screens/Onboard_page_two.dart';
 
 void main() {
   runApp(MainApp());
@@ -18,13 +15,28 @@ class MainApp extends StatefulWidget {
 }
 
 class _MainAppState extends State<MainApp> {
+  final controller = PageController(initialPage: 0);
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
-        body: OnboardOne(),
+        body: PageView(
+          scrollDirection: Axis.vertical,
+          controller: controller,
+          children: const [
+            OnboardPageOne(),
+            OnboardPageTwo(),
+            OnboardPageThree(),
+          ],
+        ),
       ),
     );
   }
