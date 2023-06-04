@@ -1,0 +1,27 @@
+name: hw_16
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  patterns_canvas: ^0.4.0
+  dots_indicator: ^3.0.0
+  google_nav_bar: ^5.0.6
+  carousel_slider: ^4.2.1
+  scrollable_list_tab_scroller: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/
